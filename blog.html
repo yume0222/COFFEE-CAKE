@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="COFFEE & CAKEの日々の様子をお伝えしています。イベントに関する情報や新しいメニュー等も発信していますのでぜひご覧になってみてください。"
+    />
+    <title>日々の様子 | COFFEE & CAKE</title>
+    <link rel="icon" href="img/common/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+  <body>
+    <!-- HeaderArea -->
+    <div class="header-area">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link">
+            <img
+              src="img/common/logo.svg"
+              alt="COFFEE & CAKE"
+              class="header__logo-img"
+            />
+          </a>
+        </div>
+        <nav
+          class="header__nav"
+          id="global-nav"
+          aria-label="グローバルナビゲーション"
+        >
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="index.html" class="header__nav-link">トップ</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="concept.html" class="header__nav-link">コンセプト</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="index.html#menu" class="header__nav-link">メニュー</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="blog.html" aria-current="page" class="header__nav-link"
+                >ブログ</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#access" class="header__nav-link">アクセス</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="header__hamburger"
+          aria-label="メニュー"
+          aria-expanded="false"
+          aria-controls="global-nav"
+        >
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+        </button>
+      </header>
+      <!-- Mainvisual -->
+      <div class="mainvisual">
+        <img
+          src="img/blog/mainvisual.jpg"
+          alt="ノートパソコンとコーヒー"
+          class="mainvisual__img"
+        />
+        <h1 class="mainvisual__title">
+          <span class="mainvisual__title-ja">日々の様子</span>
+          <span class="mainvisual__title-en">BLOG</span>
+        </h1>
+      </div>
+    </div>
+    <!-- Main -->
+    <main>
+      <!-- BlogList -->
+      <div class="blog-list l-wrapper l-wrapper--lg u-mt-section-sm">
+        <ul class="blog-list__items">
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog1.jpg"
+                  loading="lazy"
+                  alt="クロワッサンとコーヒー、ストロー付きのドリンク"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">モーニングを始めました！</p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog2.jpg"
+                  loading="lazy"
+                  alt="コーヒーのイラスト"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                【イベント】来週からCOFFEE TIMEを開催します。
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog3.jpg"
+                  loading="lazy"
+                  alt="コーヒー豆と淹れたコーヒー"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                私たちが使用しているコーヒー豆のお話。
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog4.jpg"
+                  loading="lazy"
+                  alt="カフェ店内の様子"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                【営業時間変更のご案内】1月から営業時間が変更になります。
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog5.jpg"
+                  loading="lazy"
+                  alt="コーヒーの文字"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                【イベント】コーヒーフェスティバルに参加します。
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog6.jpg"
+                  loading="lazy"
+                  alt="エスプレッソマシンで抽出している様子"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                新しいエスプレッソマシンを導入しました。
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog7.jpg"
+                  loading="lazy"
+                  alt="テイクアウト用のコーヒー"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">テイクアウトやってます。</p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog8.jpg"
+                  loading="lazy"
+                  alt="紙袋が3つ並んでいる"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">オンラインストアに新登場！</p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog9.jpg"
+                  loading="lazy"
+                  alt="コーヒーを準備している様子"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">新しいメニューを追加しました。</p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog10.jpg"
+                  loading="lazy"
+                  alt="コーヒーカップが2つ並んでいる"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                【イベント】コーヒーイベント開催のお知らせ
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog11.jpg"
+                  loading="lazy"
+                  alt="コーヒーと周囲の装飾"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">
+                ギフトボックスの販売を開始しました。
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#" class="blog-list__link">
+              <div class="blog-list__img-wrapper">
+                <img
+                  src="img/blog/blog12.jpg"
+                  loading="lazy"
+                  alt="ワッフルを食べている様子"
+                  class="blog-list__img"
+                />
+              </div>
+              <time datetime="2024-01-01" class="blog-list__date"
+                >2024.1.1</time
+              >
+              <p class="blog-list__title">コーヒーと相性の良いスイーツ特集</p>
+            </a>
+          </li>
+        </ul>
+        <ol class="blog-list__pagination">
+          <li class="blog-list__pagination-item">
+            <span class="blog-list__pagination-link is-current">1</span>
+          </li>
+          <li class="blog-list__pagination-item">
+            <a href="#" class="blog-list__pagination-link">2</a>
+          </li>
+          <li class="blog-list__pagination-item">
+            <a href="#" class="blog-list__pagination-link">3</a>
+          </li>
+          <li class="blog-list__pagination-item">
+            <a href="#" class="blog-list__pagination-link">></a>
+          </li>
+        </ol>
+      </div>
+      <!-- Access -->
+      <section class="access u-mt-section">
+        <div class="access__inner l-wrapper">
+          <h2 class="c-section-title-v c-section-title-v--pl">
+            <span class="c-section-title-v__ja">お店の情報</span>
+            <span class="c-section-title-v__en">ACCESS</span>
+          </h2>
+          <div class="access__map">
+            <iframe
+              title="店舗の地図"
+              class="access__map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.331832880808!2d139.73305507579798!3d35.69345097258329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5e40fd8ca9%3A0xe4e83101398f38cf!2z44CSMTYyLTA4NDYg5p2x5Lqs6YO95paw5a6_5Yy65biC6LC35bem5YaF55S677yS77yR4oiS77yR77yT!5e0!3m2!1sja!2sjp!4v1705474410275!5m2!1sja!2sjp"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <dl class="access__list">
+            <dt class="access__term">営業時間</dt>
+            <dd class="access__description">
+              AM10:00 - PM18:00（定休日：月曜日）
+            </dd>
+            <dt class="access__term">住所</dt>
+            <dd class="access__description">
+              東京都〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+            </dd>
+            <dt class="access__term">アクセス</dt>
+            <dd class="access__description">〇〇駅より徒歩5分</dd>
+            <dt class="access__term">Tel</dt>
+            <dd class="access__description">03-XXXX-XXXX</dd>
+            <dt class="access__term">Mail</dt>
+            <dd class="access__description">info@xxxxxxxxxx.xxx</dd>
+          </dl>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="l-wrapper footer__inner">
+        <div class="footer__logo">
+          <a href="index.html" class="footer__logo-link">
+            <img
+              src="img/common/logo.svg"
+              alt="COFFEE & CAKE"
+              class="footer__logo-img"
+            />
+          </a>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="index.html" class="footer__nav-link">トップ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="concept.html" class="footer__nav-link">コンセプト</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="index.html#menu" class="footer__nav-link">メニュー</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="blog.html" aria-current="page" class="footer__nav-link"
+              >ブログ</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a href="#access" class="footer__nav-link">アクセス</a>
+          </li>
+        </ul>
+        <ul class="footer__sns">
+          <li class="footer__sns-item">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__sns-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer__sns-item">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__sns-link"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">
+        <small>Copyright © COFFEE & CAKE. All rights reserved.</small>
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
