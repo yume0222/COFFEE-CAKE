@@ -159,7 +159,9 @@ iframe {
   }
 }
 
-/* Header */
+/*----------------------------------------
+	header
+----------------------------------------*/
 .header__logo {
   max-width: 80px;
   margin: 0 auto;
@@ -167,36 +169,64 @@ iframe {
 .header__logo-link {
   display: block;
 }
-.header__nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color-white);
-  opacity: 0;
-  visibility: hidden;
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: 130px;
+  }
+  .header__logo {
+    max-width: 100%;
+  }
 }
-.header__nav.is-open {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.6s;
-}
-.header__nav-list {
+
+/*----------------------------------------
+	gnav
+----------------------------------------*/
+/* 共通 */
+.gnav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   width: 100%;
-  height: 100vh;
-  padding: 80px 0;
-  overflow: auto;
 }
-.header__nav-item {
+.gnav__item {
   font-size: 0.875rem;
 }
-.header__hamburger {
+/* SP専用 */
+@media (max-width: 767px) {
+  .gnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .gnav[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.6s;
+  }
+  .gnav__list {
+    height: 100vh;
+    padding: 80px 0;
+    overflow: auto;
+  }
+}
+/* PC専用 */
+@media screen and (min-width: 768px) {
+  .gnav {
+    margin-top: 50px;
+  }
+}
+
+/*----------------------------------------
+	hamburger
+----------------------------------------*/
+.hamburger {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -206,7 +236,7 @@ iframe {
   background-color: var(--color-base);
   border-radius: 10px;
 }
-.header__hamburger-line {
+.hamburger__line {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -218,46 +248,27 @@ iframe {
   transition: all 0.4s;
   cursor: pointer;
 }
-.header__hamburger-line:nth-last-of-type(1) {
+.hamburger__line:nth-last-of-type(1) {
   transform: translate(-50%, -9px);
 }
-.header__hamburger-line:nth-last-of-type(2) {
+.hamburger__line:nth-last-of-type(2) {
   transform: translate(-50%, 0);
 }
-.header__hamburger-line:nth-last-of-type(3) {
+.hamburger__line:nth-last-of-type(3) {
   transform: translate(-50%, 9px);
 }
-.header__hamburger.is-open .header__hamburger-line:nth-last-of-type(1) {
+/* 閉じる */
+.hamburger[aria-expanded="true"] .hamburger__line:nth-last-of-type(1) {
   transform: translate(-50%, 0) rotate(-45deg);
 }
-.header__hamburger.is-open .header__hamburger-line:nth-last-of-type(2) {
+.hamburger[aria-expanded="true"] .hamburger__line:nth-last-of-type(2) {
   opacity: 0;
 }
-.header__hamburger.is-open .header__hamburger-line:nth-last-of-type(3) {
+.hamburger[aria-expanded="true"] .hamburger__line:nth-last-of-type(3) {
   transform: translate(-50%, 0) rotate(45deg);
 }
 @media screen and (min-width: 768px) {
-  .header {
-    max-width: 130px;
-  }
-  .header__nav {
-    position: static;
-    width: auto;
-    height: auto;
-    margin-top: 50px;
-    background: none;
-    opacity: 1;
-    visibility: visible;
-    transition: none;
-  }
-  .header__nav-list {
-    height: auto;
-    padding: 0;
-  }
-  .header__logo {
-    max-width: 100%;
-  }
-  .header__hamburger {
+  .hamburger {
     display: none;
   }
 }

@@ -28,43 +28,36 @@
             />
           </a>
         </div>
-        <nav
-          class="header__nav"
-          id="global-nav"
-          aria-label="グローバルナビゲーション"
-        >
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="index.html" class="header__nav-link">トップ</a>
+        <nav class="gnav" id="gnav" aria-label="メインメニュー">
+          <ul class="gnav__list">
+            <li class="gnav__item">
+              <a href="index.html" class="gnav__link">トップ</a>
             </li>
-            <li class="header__nav-item">
-              <a
-                href="concept.html"
-                aria-current="page"
-                class="header__nav-link"
+            <li class="gnav__item">
+              <a href="concept.html" aria-current="page" class="gnav__link"
                 >コンセプト</a
               >
             </li>
-            <li class="header__nav-item">
-              <a href="index.html#menu" class="header__nav-link">メニュー</a>
+            <li class="gnav__item">
+              <a href="index.html#menu" class="gnav__link">メニュー</a>
             </li>
-            <li class="header__nav-item">
-              <a href="blog.html" class="header__nav-link">ブログ</a>
+            <li class="gnav__item">
+              <a href="blog.html" class="gnav__link">ブログ</a>
             </li>
-            <li class="header__nav-item">
-              <a href="#access" class="header__nav-link">アクセス</a>
+            <li class="gnav__item">
+              <a href="#access" class="gnav__link">アクセス</a>
             </li>
           </ul>
         </nav>
         <button
-          class="header__hamburger"
-          aria-label="メニュー"
+          class="hamburger"
+          aria-label="メニューを開く"
           aria-expanded="false"
-          aria-controls="global-nav"
+          aria-controls="gnav"
         >
-          <span class="header__hamburger-line"></span>
-          <span class="header__hamburger-line"></span>
-          <span class="header__hamburger-line"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
         </button>
       </header>
       <!-- Mainvisual -->
@@ -148,7 +141,7 @@
         </div>
       </div>
       <!-- Access -->
-      <section class="access u-mt-section">
+      <section class="access u-mt-section" id="access">
         <div class="access__inner l-wrapper">
           <h2 class="c-section-title-v c-section-title-v--pl">
             <span class="c-section-title-v__ja">お店の情報</span>
