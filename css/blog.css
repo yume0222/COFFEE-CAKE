@@ -1,6 +1,12 @@
 @charset "utf-8";
 
-/* BlogList */
+/*----------------------------------------
+	ブログ一覧ページ専用
+----------------------------------------*/
+
+/*----------------------------------------
+	全体レイアウト
+----------------------------------------*/
 .blog-list__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -11,6 +17,15 @@
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .blog-list__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*----------------------------------------
+	パーツレイアウト
+----------------------------------------*/
 .blog-list__img {
   border-radius: 30px;
 }
@@ -20,15 +35,14 @@
 .blog-list__title {
   font-size: 0.875rem;
 }
+
+/*----------------------------------------
+	ページネーション
+----------------------------------------*/
 .blog-list__pagination {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   margin-top: 40px;
-}
-@media screen and (min-width: 768px) {
-  .blog-list__items {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
