@@ -9,7 +9,7 @@
 ---
 
 ## 使用技術
-HTML, CSS, JavaScript
+HTML / CSS / JavaScript
 
 ---
 
